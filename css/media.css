@@ -1,0 +1,516 @@
+
+
+@media screen and (max-width: 1200px) { 
+   
+    .header-content h1 {
+        font-size: 40px;
+    }
+
+    .works-pictures-grid {
+        gap: 10px;
+    }
+
+    .client-content h5 {
+        font-size: 19px;
+    }
+
+    .respond-container p {
+        font-size: 12px;
+    }
+
+    .offer-container {
+        background: url(/img/Offer-BG.jpg) no-repeat center top/cover;
+        text-align: center;
+        color: #fff;
+        padding: 73px 230px 55px;
+    }
+
+    .offer-container h2 {
+        font-size: 40px;
+        font-weight: 700;
+    }
+}
+
+
+
+@media screen and (max-width: 900px) { 
+    
+    .nav {
+        width: 80%;
+    }
+
+    .btn-contact a {
+        padding: 20px 38px;
+        font-size: 14px;
+    }
+
+    .company {
+        width: 100%;
+        padding: 0px 0px;
+    }
+
+    .header-content h1 {
+        font-size: 34px;
+    }
+
+    .services-container {
+        padding-top: 100px;
+    }
+
+    .services-card-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .services-card {
+        width: 80%;
+    }
+
+    .benefits-cards {
+        flex-direction: column;
+    }
+
+    .benefits-card {
+        width: 100%;
+    }
+
+    /* Galery */
+
+    .works-pictures-grid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        padding-bottom: 100px;
+        gap: 10px;
+    }
+
+    .works-pictures-grid div:nth-child(9) {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        margin: 0px 0px;
+    }
+
+    .works-pictures-grid div:nth-child(8) {
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin: 0px 0px;
+    }
+
+    .works-pictures-grid div:nth-child(6) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        align-self: end;
+    }
+
+    .works-pictures-grid div:nth-child(4) {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        margin: 0px 0px;
+    }
+
+    .respond {
+        padding-bottom: 100px;
+        width: 65%;
+    }
+
+    .client-content h5 {
+        font-size: 14px;
+    }
+
+    .client-content p {
+        font-size: 12px;
+    }
+
+    .video-content {
+        max-width: 800px;
+    }
+
+    .video-content iframe {
+       width: 100%;
+    }
+
+    .offer-container {
+        padding: 73px 120px 55px;
+    }
+
+    .offer-container h2 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 769px) {
+
+    .header-content {
+        width: 70%;
+        padding: 100px 0px 170px;
+    }
+
+    .company-content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .content-pic,
+    .company-text {
+        width: 90%;
+        padding-top: 30px;
+    }
+
+    .client-content {
+        width: 30%;
+        background: #fff;
+        padding: 50px 20px 24px;
+    }
+
+    .btn-contact a {
+        padding: 15px 30px;
+        font-size: 14px;
+    }
+
+    .partners-container {
+        flex-direction: column;
+    }
+
+    .partners-logo {
+        padding: 20px 0px;
+    }
+
+    .partners-container h2 {
+        font-size: 40px;
+    }
+
+    .partners {
+        padding: 180px 0px;
+        width: 100%;
+    }
+
+    .footer-container .foot-menu h3 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 650px) {
+
+    /* Burger-menu */
+
+    body.lock {
+        overflow: hidden;
+    }
+
+    .nav {
+        position: fixed;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #152546;
+        z-index: 90;
+        transition: all 0.3s ease 0s;
+    }
+
+    .nav.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #152546;
+        z-index: 90;
+        transition: all 0.3s ease 0s;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        font-size: 25px;
+        align-items: center;
+        padding-top: 100px;
+    }
+
+    .nav li {
+        padding: 10px 0px;
+    }
+
+    .burger-menu {
+        width: 40px;
+        height: 20px;
+        position: relative;
+        z-index: 90;
+    }
+
+    .burger-menu::after, 
+    .burger-menu::before {
+        content: "";
+        width: 100%;
+        height: 3px;
+        background-color: black;
+        position: absolute;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+
+    .burger-menu::before {
+        top: 0;
+    }
+    
+    .burger-menu::after {
+        bottom: 0;
+    }
+
+    .burger-menu span {
+        position: absolute;
+        background-color: #000000;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+
+    .burger-menu.active::before {
+        transform: rotate(45deg); 
+        top: 0px;   
+        transition: all 0.3s ease 0s;
+        background-color: aliceblue;
+    }
+
+    .burger-menu.active span{ 
+        transform: scale(0);
+    }
+
+    .burger-menu.active::after {
+        transform: rotate(-45deg); 
+        bottom: 17px;   
+        background-color: aliceblue;
+    }
+
+
+    .header-content h1 {
+        font-size: 26px;
+    }
+
+    .client-container {
+        flex-direction: column;
+    }
+
+    .client-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-contact {
+        width: 165px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .client-content h5 {
+        font-size: 24px;
+    }
+
+    .client-content p {
+        font-size: 18px;
+    }
+
+    .respond {
+        padding-bottom: 0px;
+        width: 100%;
+    }
+
+    .offer-container {
+        padding: 73px 0px 55px;
+    }
+
+    .offer-forms input {
+        width: 68%;
+    }
+
+    .footer-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 70px 0px;
+        flex-direction: column;
+    }
+
+    .footer-contact {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-contact img {
+        margin: 0 auto;
+    }
+
+    .btn-contact-foo {
+        margin: 0 auto;
+    }
+
+    .foot-menu {
+        width: 100%;
+        padding: 50px;
+        text-align: center;
+    }
+
+    .footer-container .foot-menu h3 {
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .footer-container .foot-menu a {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 400;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .respond-flex {
+        display: flex;
+        justify-content: end;
+        position: relative;
+        bottom: -70px;
+    }
+
+    .partners {
+        padding: 235px 0px;
+        width: 100%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 400px) {
+
+    .nav ul {
+        font-size: 17px;
+    }
+
+    .header-content {
+        padding: 50px 0px 170px;
+    }
+
+    .services-card h3 {
+        font-size: 18px;
+    }
+
+    .services-card p {
+        font-size: 14px;
+    }
+
+    .services-card h3 {
+        padding: 15px 0px;
+    }
+
+    .respond-flex {
+        display: flex;
+        justify-content: end;
+        position: relative;
+        bottom: -162px;
+    }
+
+    .partners-container {
+        flex-direction: column;
+        padding-top: 100px;
+    }
+
+    .video-coment {
+        padding: 16px 56px 25px 53px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 320px) {
+    .company-skill {
+        flex-direction: column;
+    }
+    
+    .header-content {
+        width: 100%;
+        padding: 45px 0px 170px;
+    }
+
+    .header-content h1 {
+        font-size: 20px;
+    }
+
+    .header-content h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .benefits-card h4 {
+        font-size: 15px;
+    }
+
+    .client-content h5 {
+        font-size: 19px;
+    }
+
+    .client-content p {
+        font-size: 16px;
+    }
+
+    .partners-container h2 {
+        font-size: 35px;
+    }
+
+    .video-coment {
+        padding: 32px 40px 43px 52px;
+    }
+
+    .partners {
+        /* padding: 235px 0px; */
+        width: 100%;
+        padding-top: 260px;
+        padding-bottom: 60px;
+    }
+
+    .offer-container h2 {
+        font-size: 20px;
+    }
+
+    .offer-forms input::-webkit-input-placeholder {
+        font-size: 12px;
+    }
+
+    .offer-forms input {
+        margin: 10px;
+    }
+
+    .offer-forms button {
+        width: 68%;
+    }
+}
+
+
+
+
+
+
